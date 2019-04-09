@@ -1,0 +1,272 @@
+<mjml>
+  <mj-head>
+    <mj-title>Signature Real Estate Professionals</mj-title>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" /> 
+    <mj-font name="Alice" href="https://fonts.googleapis.com/css?family=Alice" /> 
+    <mj-style>
+      .new-results {
+         font-family: Roboto;
+         padding-top: 7px;
+      }
+      .diffs {
+         font-family: Roboto;
+         padding-top: 7px;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#EAE8E5">
+    <mj-section padding="20px 0 0 0">
+      <mj-column>
+        <mj-image src="https://cloudbackr.com/volume-nyc1-02/assets/box-head.png" alt="" align="center" border="none" padding="0px"></mj-image>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#FFFFFF">
+      <mj-column>
+        <mj-image align="left" src="https://cloudbackr.com/volume-nyc1-02/assets/header.jpg" width="300px" padding="0 0"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF">
+      <mj-column>
+        <mj-text font-size="36px">1234 Semperin Way</mj-text>
+        <mj-image padding="20px" align="left" src="https://cloudbackr.com/volume-nyc1-02/assets/CatInTheHat.jpeg" padding="0 0"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding-bottom="0">
+      <mj-column>
+        <mj-text font-size="26px" padding="0 20px" line-height="40px">
+          $XXX,XXX.XX
+        </mj-text>
+        <mj-text font-size="21px" padding="0 40px" font-weight="300" line-height="40px">
+          Contemporary / Modern
+        </mj-text>
+        <mj-text font-size="16px" line-height="20px" font-family="Roboto">
+          XXX days on SREP
+        <br/>
+          Status: XXX
+        </mj-text>
+        <mj-text font-family="Roboto">
+          The following changes have been made to this listing:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding-top="0">
+      <mj-column>
+        <mj-table>
+          <tr>
+            <td class="new-results" style="font-size: 20px;padding-left: 20px;">
+              <span>No. of Likes:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 20px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="font-size: 20px;padding-left: 20px;">
+              <span>Price:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 20px;">$1,000</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Beds:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Baths:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Building Area Total:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Lot Size:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Association Fee:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Property Type:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Photo Count:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Walkthrough:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Style:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Year Built:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
+              <span>Property Condition:</span>
+              <span>XXX</span>
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 16px;">XXX</span>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-button href="https://signaturerep.com/search/Atlanta,%20GA?" border-radius="20px" background-color="#007bff">View it on signaturerep.com</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-url="http://nimus.de/share/tpl-realestate/img-1.png" vertical-align="middle" background-size="cover" padding="30px" background-repeat="no-repeat">
+      <mj-column vertical-align="middle" width="60%">
+        <mj-text align="center" padding="40px 30px" color="#FFFFFF" font-size="42px" line-height="48px" font-family="Alice, Helvetica, Arial, sans-serif">1140 Semperin Way</mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle" width="40%" background-color="#FFFFFF">
+        <mj-image src="http://nimus.de/share/tpl-realestate/box-top.png" width="220px" alt="" padding="0" align="center" border="none"></mj-image>
+        <mj-text align="center" padding="20px 20px 0 20px" color="#1D83A8" font-size="26px" line-height="30px" font-family="Alice, Helvetica, Arial, sans-serif">– take a tour –</mj-text>
+        <!-- <mj-text align="center" padding="0 20px">Nascetur ridiculus mus. Donec quam felis, ultricies nec</mj-text> -->
+        <mj-button background-color="#F44E3C" color="white" padding="20px 20px 30px 20px" border-radius="20px">view details</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px" background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-image src="https://cloudbackr.com/volume-nyc1-02/assets/symbol-1.png" alt="" width="292px" align="left" border="none"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0 20px" background-color="#FFFFFF">
+      <mj-column>
+        <mj-text align="center" font-size="26px" line-height="30px" font-family="Alice, Helvetica, Arial, sans-serif">Make an Offer</mj-text>
+        <mj-divider width="20px" padding="20px 0" border-width="2px" border-color="#000000"></mj-divider>
+        <mj-text align="center" padding="0 40px">Would you like to save $2,000 on the purchase of your next home? <br/>
+        Interested in a free Comparative Market Analysis? <br/>
+        Repond directly to this email or call +1 (619) 304-6911. <br/>
+        An agent will be with you shortly.</mj-text>
+        <mj-button background-color="#F44E3C" color="white" padding="20px 20px 10px 20px" border-radius="20px">Have an agent contact you</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px" background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-image src="https://cloudbackr.com/volume-nyc1-02/assets/symbol-2.png" alt="" width="213px" align="right" border="none"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding-bottom="75px">
+      <mj-column>
+        <mj-text font-family="Roboto" padding="20px 40px" font-size="16px">
+          Ellen Moore<br/>
+          ellen@singaturerep.com<br/>
+          +1 (404) 234-4167
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="40px 20px" background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-image src="http://nimus.de/share/tpl-realestate/icon-1.png" alt="" width="130px" align="center" border="none"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="10px 0 20px 0">
+      <mj-column>
+        <mj-text align="center" color="#9B9B9B" font-size="11px"><a href="#" style="color: #9B9B9B;">Unsubscribe</a></mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

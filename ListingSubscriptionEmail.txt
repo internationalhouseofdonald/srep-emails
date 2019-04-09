@@ -1,0 +1,136 @@
+$EmailAddress, $MUI, $StreetAddress, $StreetAddressLine2, $CurrentPrice, $BedroomsTotal, $BathroomCount, $NumberOfLikes, $DaysOnMarket, $StandardStatusDiff, $StreetNumberDiff, $StreetNameDiff, $StreetSuffixDiff, $CityDiff, $StateOrProvinceDiff, $PostalCodeDiff, $CurrentPriceDiff, $BedroomsTotalDiff, $BathroomCountDiff, $NumberOfLikesDiff, $BuildingAreaTotalDiff, $LotSizeAcresDiff, $AssociationFeeDiff, $AssociationFee2Diff, $PropertyTypeDiff, $PhotoCountDiff, $VirtualTourURLUnbrandedDiff, $ArchitecturalStyleDiff, $YearBuiltDiff, $PropertyConditionDiff
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .list-inline-item:not(:last-child)::after {
+        content: ', ';
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="mx-auto mb-5 p-1 p-sm-4 p-lg-5  bg-white" style="max-width: 600px;">
+    <img class="mx-auto pb-4 w-100" src="https://cloudbackr.com/volume-nyc1-02/assets/EmailHeader.jpg" />
+    <img class="mx-auto pb-4 w-100" src="https://cloudbackr.com/volume-nyc1-02/large-photos/large-{$MUI}-0.jpeg" />
+    <p style="text-indent: 20px;">
+      <small class="text-muted pb-4">You are receiving this email because you are subscribed to a listing on https://signaturerep.com/. For more information, contact an agent at <a href="tel:+14042344167">(404) 234-4167</a>.</small>
+    </p>
+    <h1 style="font-weight: 300;">{$StreetAddress}</h1>
+    <h2 style="font-weight: 300;">{$StreetAddressLine2}</h2>
+    <div class="d-flex justify-content-between align-items-center" style="font-size: 1.5rem;">
+      <span><b>Price:</b>{$CurrentPrice}</span>
+
+
+<span>
+  <span class="fas fa-arrow-up text-success ml-auto"></span> $1,000
+</span>
+
+</div>
+<ul class="list-inline" style="font-size: 1.2rem;">
+<li class="list-inline-item">Beds</li>
+<li class="list-inline-item">Baths</li>
+</ul>
+<div class="pb-3" style="font-size: 1.5rem;">
+<span class="mr-4">
+<span class="fas fa-thumbs-up fa-lg text-primary">
+</span> 50</span>
+
+
+<span>
+  <span class="fas fa-arrow-up text-success ml-auto">
+</span> 3</span>
+
+
+</div>
+<div class="pb-3" style="font-size: 1.5rem;">
+<span class="mr-4">Days on Market:</span>
+<span> 3</span>
+</div>
+<ul>
+<li class="d-flex justify-content-between">
+<span>
+
+
+<b>Status:</b> <span class="text-success">Active</span>
+
+
+</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+
+
+<b>Square Feet:</b> 40,000</span>
+
+
+</li>
+<li class="d-flex justify-content-between">
+<span>
+
+
+<b>Lot Size:</b> X acres</span>
+
+
+</li>
+<li class="d-flex justify-content-between">
+<span>
+<b>Association Fee:</b> $100/mth</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+<b>Property Type:</b> Residential Detached</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+
+
+<b>Photo Count:</b> 40 <a href="https://signaturerep.com/City,St/SMLSID/carousel">NEW photos!</a>
+
+
+</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+
+
+<b>Walkthrough:</b> <a href="https://signaturerep.com/City,St/SMLSID/virtual_tour">NEW walkthrough!</a>
+
+
+</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+<b>Style:</b> Traditional</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+<b>Year Built:</b> 2016</span>
+</li>
+<li class="d-flex justify-content-between">
+<span>
+<b>Property Condition:</b> Resale</span>
+</li>
+</ul>
+<div class="footer pt-5">
+<img class="float-left pr-3" src="https://placehold.it/100x100">
+<div class="py-2">Ellen Moore<br>ellen@signaturerep.com<br>(404) 234-4167</div>
+<div class="w-100">
+<p class="text-right">
+<small>
+<a href="https://signaturerep.com/unsubscribe/l-{$Listing}">Unsubscribe</a>
+</small>
+</p>
+</div>
+</div>
+</div>
+  </body>
+</html>
+
+
+SELECT ls.Listing_Subscription_ID as ListingSubscriptionID, u.email as EmailAddress, al.ListingID as MUI, concat(al.StreetNumber, ' ', al.StreetName, ' ', al.StreetSuffix) as StreetAddress, concat(al.City, ', ', al.StateOrProvince, ', ', al.PostalCode) as StreedAddressLine2, al.CurrentPrice as CurrentPrice, al.BedroomsTotal as BedroomsTotal, al.BathroomCount as BathroomCount, (SELECT count(*) FROM users_listings_junction as ulj WHERE ulj.SMLSID = al.SMLSID) as NumberOfLikes, al.DaysOnMarket as DaysOnMarket, IF(al.StandardStatus != ls.StandardStatus, al.StandardStatus, null) as StandardStatusDiff, IF(al.StreetNumber != ls.StreetNumber, al.StreetNumber, null) as StreetNumberDiff, IF(al.StreetName != ls.StreetName, al.StreetName, null) as StreetNameDiff, IF(al.StreetSuffix != ls.StreetSuffix, al.StreetSuffix, null) as StreetSuffixDiff, IF(al.City != ls.City, al.City, null) as CityDiff, IF(al.StateOrProvince != ls.StateOrProvince, al.StateOrProvince, null) as StateOrProvinceDiff, IF(al.PostalCode != ls.PostalCode, al.PostalCode, null) as PostalCodeDiff, IF(al.CurrentPrice != ls.CurrentPrice, al.CurrentPrice - ls.CurrentPrice, null) as CurrentPriceDiff, IF(al.BedroomsTotal != ls.BedroomsTotal, al.BedroomsTotal - ls.BedroomsTotal, null) as BedroomsTotalDiff, IF(al.BathroomCount != ls.BathroomCount, al.BathroomCount - ls.BathroomCount, null) as BathroomCountDiff, IF((SELECT count(*) FROM users_listings_junction as ulj WHERE ulj.SMLSID = al.SMLSID) != ls.NumberOfLikes, (SELECT count(*) FROM users_listings_junction as ulj WHERE ulj.SMLSID = al.SMLSID) - ls.NumberOfLikes, null) as NumberOfLikesDiff, IF(al.BuildingAreaTotal != ls.BuildingAreaTotal, al.BuildingAreaTotal, null) as BuildingAreaTotalDiff, IF(al.LotSizeAcres != ls.LotSizeAcres, al.LotSizeAcres, null) as LotSizeAcresDiff, IF(al.AssociationFee != ls.AssociationFee, al.AssociationFee, null) as AssociationFeeDiff, IF(al.AssociationFee2 != ls.AssociationFee2, al.AssociationFee2, null) as AssociationFee2Diff, IF(al.PropertyType != ls.PropertyType, al.PropertyType, null) as PropertyTypeDiff, IF(al.PhotoCount != ls.PhotoCount, al.PhotoCount - ls.PhotoCount, null) as PhotoCountDiff, IF(al.VirtualTourURLUnbranded != ls.VirtualTourURLUnbranded, al.VirtualTourURLUnbranded, null) as VirtualTourURLUnbrandedDiff, IF(al.ArchitecturalStyle != ls.ArchitecturalStyle, al.ArchitecturalStyle, null) as ArchitecturalStyleDiff, IF(al.YearBuilt != ls.YearBuilt, al.YearBuilt, null) as YearBuiltDiff, IF(al.PropertyCondition != ls.PropertyCondition, al.PropertyCondition, null) as PropertyConditionDiff FROM srep.listing_subscriptions AS ls LEFT JOIN srep.users as u ON ls.User_ID = u.User_id LEFT JOIN srep.active_listings as al ON ls.SMLSID = al.SMLSID;
