@@ -12,6 +12,18 @@
          font-family: Roboto;
          padding-top: 7px;
       }
+      .success {
+        color: #28a745;
+      }
+      .failure {
+        color: #dc3545;
+      }
+      .row {
+        padding-top:10px;
+      }
+      .label {
+        padding-left: 10px;
+      }
     </mj-style>
   </mj-head>
   <mj-body background-color="#EAE8E5">
@@ -28,8 +40,14 @@
     </mj-section>
     <mj-section background-color="#FFFFFF">
       <mj-column>
-        <mj-text font-size="36px">1234 Semperin Way</mj-text>
-        <mj-image padding="20px" align="left" src="https://cloudbackr.com/volume-nyc1-02/assets/CatInTheHat.jpeg" padding="0 0"></mj-image>
+        <mj-table>
+          <tr>
+            <td>
+              <p style="font-size:34px;line-height:40px;text-indent:20px;margin-top:0;margin-bottom:0;">1234 Semperin Way</p>
+            </td>
+          </tr>
+        </mj-table>
+        <mj-image padding="10px 0" align="left" src="https://cloudbackr.com/volume-nyc1-02/assets/CatInTheHat.jpeg" padding="0 0"></mj-image>
       </mj-column>
     </mj-section>
     <mj-section background-color="#FFFFFF" padding-bottom="0">
@@ -43,170 +61,223 @@
         <mj-text font-size="16px" line-height="20px" font-family="Roboto">
           XXX days on SREP
         <br/>
-          Status: XXX
+          Status: 
+            <span class="success">XXX</span>
+            <span class="failure">XXX</span>
         </mj-text>
         <mj-text font-family="Roboto">
           The following changes have been made to this listing:
         </mj-text>
+        <mj-table>
+          <tr>
+            <td class="row" style="font-size: 21px;padding-bottom:13px;">
+              <span class="label">Likes:</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 28px;" align="left" valign="middle">
+              <span style="vertical-align:middle;">XXX</span>
+              <img style="padding-left:10px;vertical-align:middle;" src="https://cloudbackr.com/volume-nyc1-02/assets/fa-thumbs-up.png" alt="thumbs up" />
+            </td>
+            <td class="diffs" align="right" style="padding-right:10px;">
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
+            </td>
+            <td class="diffs" align="left">
+              <span style="font-size: 28px;">100</span>
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
     <mj-section background-color="#FFFFFF" padding-top="0">
       <mj-column>
         <mj-table>
+
           <tr>
-            <td class="new-results" style="font-size: 20px;padding-left: 20px;">
-              <span>No. of Likes:</span>
-              <span>XXX</span>
-            </td>
-            <td class="diffs" align="right" style="padding-right:10px;">
-              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
-            </td>
-            <td class="diffs" align="left">
-              <span style="font-size: 20px;">XXX</span>
+            <td class="row">
+              <span class="label">Price:</span>
             </td>
           </tr>
-          <tr>
-            <td class="new-results" style="font-size: 20px;padding-left: 20px;">
-              <span>Price:</span>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
               <span style="font-size: 20px;">$1,000</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Beds:</span>
+            <td class="row">
+              <span class="label">Beds:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Baths:</span>
+            <td class="row">
+              <span class="label">Baths:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Building Area Total:</span>
-              <span>XXX</span>
+            <td class="row">
+              <span class="label">Building Area Total:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
+              <span>XXXX sq ft.</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Lot Size:</span>
+            <td class="row">
+              <span class="label">Lot Size:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Association Fee:</span>
+            <td class="row">
+              <span class="label">Association Fee:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Property Type:</span>
-              <span>XXX</span>
+            <td class="row">
+              <span class="label">Property Type:</span>
             </td>
-            <td class="diffs" align="right" style="padding-right:10px;">
-              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
-            </td>
-            <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
+              <span class="success">XXX</span>
+              <span class="failure">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Photo Count:</span>
+            <td class="row">
+              <span class="label">Photo Count:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Walkthrough:</span>
+            <td class="row">
+              <span class="label">Walkthroughs:</span>
+            </td>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Style:</span>
-              <span>XXX</span>
+            <td class="row">
+              <span class="label">Style:</span>
             </td>
-            <td class="diffs" align="right" style="padding-right:10px;">
-              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
-            </td>
-            <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
+              <span class="success">XXX</span>
+              <span class="failure">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Year Built:</span>
+            <td class="row">
+              <span class="label">Year Built:</span>
+            </td>
+          </tr>          
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
               <span>XXX</span>
             </td>
             <td class="diffs" align="right" style="padding-right:10px;">
               <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
+              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-down.png" alt="up arrow" width="20px" />
             </td>
             <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+              <span style="font-size: 20px;">XXX</span>
             </td>
           </tr>
           <tr>
-            <td class="new-results" style="padding-left: 20px;font-size: 16px;">
-              <span>Property Condition:</span>
-              <span>XXX</span>
+            <td class="row">
+              <span class="label">Property Condition:</span>
             </td>
-            <td class="diffs" align="right" style="padding-right:10px;">
-              <img src="https://cloudbackr.com/volume-nyc1-02/assets/icomoon-arrow-up.png" alt="up arrow" width="20px" />
-            </td>
-            <td class="diffs" align="left">
-              <span style="font-size: 16px;">XXX</span>
+          </tr>
+          <tr style="border-top:1px solid #CCC;">
+            <td class="new-results" style="font-size: 20px;">
+              <span class="success">XXX</span>
+              <span class="failure">XXX</span>
             </td>
           </tr>
         </mj-table>
@@ -237,11 +308,11 @@
       <mj-column>
         <mj-text align="center" font-size="26px" line-height="30px" font-family="Alice, Helvetica, Arial, sans-serif">Make an Offer</mj-text>
         <mj-divider width="20px" padding="20px 0" border-width="2px" border-color="#000000"></mj-divider>
-        <mj-text align="center" padding="0 40px">Would you like to save $2,000 on the purchase of your next home? <br/>
+        <mj-text align="center" padding="0 40px" line-height="18px">Would you like to save $2,000 on the purchase of your next home? <br/>
         Interested in a free Comparative Market Analysis? <br/>
         Repond directly to this email or call +1 (619) 304-6911. <br/>
         An agent will be with you shortly.</mj-text>
-        <mj-button background-color="#F44E3C" color="white" padding="20px 20px 10px 20px" border-radius="20px">Have an agent contact you</mj-button>
+        <mj-button href="#" background-color="#F44E3C" color="white" padding="20px 20px 10px 20px" border-radius="20px">Have an agent contact you</mj-button>
       </mj-column>
     </mj-section>
     <mj-section padding="20px" background-color="#FFFFFF">
@@ -251,7 +322,7 @@
     </mj-section>
     <mj-section background-color="#FFFFFF" padding-bottom="75px">
       <mj-column>
-        <mj-text font-family="Roboto" padding="20px 40px" font-size="16px">
+        <mj-text font-family="Roboto" padding="20px 40px" font-size="16px" line-height="20px">
           Ellen Moore<br/>
           ellen@singaturerep.com<br/>
           +1 (404) 234-4167
