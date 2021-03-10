@@ -35,7 +35,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
     "json-loader": "^0.5.7",
-    "mdbreact": "^4.7.0",
+    "mdbreact": "^4.27.0",
     "mini-css-extract-plugin": "^0.4.3",
     "mjml": "^4.4.0-beta.1",
     "node-sass": "^4.9.0",
